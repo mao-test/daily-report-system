@@ -15,19 +15,19 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(
             name = "getAllEmployees",
-            query = "SELECT e FROM Employee As e ORDER BY e.id DESC"
+            query = "SELECT e FROM Employee AS e ORDER BY e.id DESC"
             ),
     @NamedQuery(
             name = "getEmployeesCount",
-            query = "SELECT COUNT(e) FROM Employee As e"
+            query = "SELECT COUNT(e) FROM Employee AS e"
             ),
     @NamedQuery(
             name = "checkRegisteredCode",
-            query = "SELECT COUNT(e) FROM Employee As e WHERE e.code = :code"
+            query = "SELECT COUNT(e) FROM Employee AS e WHERE e.code = :code"
             ),
     @NamedQuery(
             name = "checkLoginCodeAndPassword",
-            query = "SELECT e FROM Employee As e WHERE e.delete_flag = 0 AND e.code = :code AND e.password = :pass"
+            query = "SELECT e FROM Employee AS e WHERE e.delete_flag = 0 AND e.code = :code AND e.password = :pass"
             )
 })
 
@@ -53,7 +53,7 @@ public class Employee {
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
-    @Column(name = "updated _at", nullable = false)
+    @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
     @Column(name = "delete_flag", nullable = false)
