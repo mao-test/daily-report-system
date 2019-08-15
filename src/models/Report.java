@@ -1,7 +1,7 @@
 package models;
 
+import java.sql.Date;
 import java.sql.Timestamp;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -38,7 +38,7 @@ public class Report {
     private Employee employee;
 
     @Column(name = "report_date", nullable = false)
-    private Date repots_date;
+    private Date report_date;
 
     @Column(name = "title", length = 255, nullable = false)
     private String title;
@@ -69,12 +69,12 @@ public class Report {
         this.employee = employee;
     }
 
-    public Date getRepots_date() {
-        return repots_date;
+    public Date getReport_date() {
+        return report_date;
     }
 
-    public void setRepots_date(Date repots_date) {
-        this.repots_date = repots_date;
+    public void setReport_date(Date report_date) {
+        this.report_date = report_date;
     }
 
     public String getTitle() {
