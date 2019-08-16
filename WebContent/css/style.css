@@ -56,9 +56,10 @@ th {
     padding: 10px 2%;
 }
 
-td {
+table td {
     width: 66%;
     padding: 10px 2%;
+    overflow-wrap : break-word;
 }
 
 button {
@@ -153,4 +154,8 @@ table#report_list .report_title {
 
 table#report_list .report_action {
     width: 13%;
+}
+
+pre {
+    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
 }
